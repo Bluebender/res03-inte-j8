@@ -13,99 +13,196 @@ html{
 }
 
 // HEADER
-body{
-    background-color: $background;
-    > header{
-        height: 10vh;
-        display: grid;
-        grid-template-columns: 1fr 0.3fr;
-        background-color: white;
-        > nav{
-            justify-self: center;
-            align-self: center;
-            > ul li{
+body > header{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    background-color: white;
+    > nav{
+        justify-self: center;
+        align-self: center;
+        > ul li{
+        color: $text;
+        display: inline;
+        margin: 0 20px;
+        }
+    }
+    > ul{
+        justify-self: center;
+        align-self: center;
+        li{
             color: $text;
             display: inline;
-            margin: 0 20px;
+            margin: 0 5px;
+            font-size: 1.4rem;
+            &:nth-of-type(1) a{
+                color: #3b5998;
             }
-        }
-        > ul{
-            justify-self: center;
-            align-self: center;
-            li{
-                color: $text;
-                display: inline;
-                margin: 0 5px;
-                font-size: 1.4rem;
-                &:nth-of-type(1) a{
-                    color: #3b5998;
-                }
-                &:nth-of-type(2) a{
-                    color: #00acee;
-                }
-                &:nth-of-type(3) a{
-                    color: #E60023;
-                }
+            &:nth-of-type(2) a{
+                color: #00acee;
+            }
+            &:nth-of-type(3) a{
+                color: #E60023;
             }
         }
     }
 }
 
 // MAIN SECTION 1
-body > main{
+body > main > section:nth-of-type(1){
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
     > section:nth-of-type(1){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 80vh;
-        > section:nth-of-type(1){
-            justify-self: center;
-            align-self: center;
-            padding: 8vw;
-            h1{
-                font-size: 4rem;
-                font-weight: bold;
-                margin: 10px 0;
-                strong{
-                    color: $bleu;
-                }
-            }
-            p:first-of-type{
-                font-size: 3rem;
-                font-weight: bold;
-                margin: 10px 0;
-            }
-            p:last-of-type{
-                font-size: 1.4rem;
-                color: $text;
-                margin: 20px 0;
-            }
-            form{
-                display: grid;
-                grid-template-columns: 1fr 0.6fr;
-                input{
-                    border-radius: 40px 0 0 40px;
-                    height: 50px;
-                    border: none;
-                    padding: 0 30px;
-                }
-                button{
-                    background-color: $bleu;
-                    border-radius: 0 40px 40px 0;
-                    height: 50px;
-                    border: none;
-                    color: white;
-                    padding: 0 20px;
-                    margin-left: -5px;
-                    font-weight: bold;
-                }
+        justify-self: center;
+        align-self: center;
+        padding: 8vw;
+        p:nth-of-type(1){
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 10px 0;
+            strong{
+                color: $bleu;
             }
         }
-        > section:nth-of-type(2){
-            justify-self: center;
-            align-self: center;
-            
+        p:nth-of-type(2){
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 10px 0;
         }
+        p:nth-of-type(3){
+            font-size: 1.4rem;
+            color: $text;
+            margin: 20px 0;
+        }
+        form{
+            display: grid;
+            grid-template-columns: 1fr 0.6fr;
+            input{
+                border-radius: 40px 0 0 40px;
+                height: 50px;
+                border: none;
+                padding: 0 30px;
+            }
+            button{
+                background-color: $bleu;
+                border-radius: 0 40px 40px 0;
+                height: 50px;
+                border: none;
+                color: white;
+                padding: 0 20px;
+                margin-left: -5px;
+                font-weight: bold;
+            }
+        }
+    }
+    > section:nth-of-type(2){
+        justify-self: center;
+        align-self: center;
+        
     }
 }
 
 // MAIN SECTION 2
+body > main > section:nth-of-type(2){
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 50px 0;
+    > section:nth-of-type(1){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h3{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        ul{
+            > li{
+                display: inline;
+                &:first-of-type{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    > section:nth-of-type(2){
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+        > article:nth-of-type(1){
+            border-radius: 20px;
+            background-image: url("https://picsum.photos/id/238/500/300");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            box-shadow: 2px 2px 10px grey;
+            > p:first-of-type{
+                color: blue;
+                font-weight: bold;
+            }
+            h3{
+                color: white;
+                font-size: 2.5rem;
+            }
+            p:last-of-type{
+                color: white;
+            }
+            
+        }
+        > article:nth-of-type(2){
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px grey;
+            display: grid;
+            grid-template-rows: 1fr 0.2fr 0.6fr 0.2fr;
+            > figure > img{
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+            > p:first-of-type{
+                font-weight: bold;
+                margin: 20px;
+            }
+            h3{
+                font-size: 2rem;
+                margin: 20px;
+
+            }
+            > p:last-of-type{
+                margin: 20px;
+            }
+        }
+    }
+    > section:nth-of-type(3){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        > article{
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px grey;
+            > figure > img{
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+            > p:first-of-type{
+                font-weight: bold;
+                margin: 20px;
+            }
+            h3{
+                font-size: 2rem;
+                margin: 20px;
+
+            }
+            > p:last-of-type{
+                margin: 20px;
+            }
+        }
+    }
+}

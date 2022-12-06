@@ -65,9 +65,6 @@ html {
   display: none;
 }
 
-body {
-  background-color: #f1f2f3;
-}
 body > header {
   height: 10vh;
   display: grid;
@@ -104,6 +101,7 @@ body > header > ul li:nth-of-type(3) a {
 }
 
 body > main > section:nth-of-type(1) {
+  background-color: #f1f2f3;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 80vh;
@@ -113,20 +111,20 @@ body > main > section:nth-of-type(1) > section:nth-of-type(1) {
   align-self: center;
   padding: 8vw;
 }
-body > main > section:nth-of-type(1) > section:nth-of-type(1) h1 {
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:nth-of-type(1) {
   font-size: 4rem;
   font-weight: bold;
   margin: 10px 0;
 }
-body > main > section:nth-of-type(1) > section:nth-of-type(1) h1 strong {
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:nth-of-type(1) strong {
   color: steelblue;
 }
-body > main > section:nth-of-type(1) > section:nth-of-type(1) p:first-of-type {
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:nth-of-type(2) {
   font-size: 3rem;
   font-weight: bold;
   margin: 10px 0;
 }
-body > main > section:nth-of-type(1) > section:nth-of-type(1) p:last-of-type {
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:nth-of-type(3) {
   font-size: 1.4rem;
   color: #687385;
   margin: 20px 0;
@@ -154,6 +152,103 @@ body > main > section:nth-of-type(1) > section:nth-of-type(1) form button {
 body > main > section:nth-of-type(1) > section:nth-of-type(2) {
   justify-self: center;
   align-self: center;
+}
+
+body > main > section:nth-of-type(2) {
+  width: 80vw;
+  margin: auto;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(1) h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(1) ul > li {
+  display: inline;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(1) ul > li:first-of-type {
+  font-weight: bold;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(1) {
+  border-radius: 20px;
+  background-image: url("https://picsum.photos/id/238/500/300");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 2px 2px 10px grey;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(1) > p:first-of-type {
+  color: blue;
+  font-weight: bold;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(1) h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(1) p:last-of-type {
+  color: white;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(2) {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px grey;
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 0.6fr 0.2fr;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(2) > figure > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(2) > p:first-of-type {
+  font-weight: bold;
+  margin: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(2) h3 {
+  font-size: 2rem;
+  margin: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(2) > article:nth-of-type(2) > p:last-of-type {
+  margin: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > article {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px grey;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > article > figure > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > article > p:first-of-type {
+  font-weight: bold;
+  margin: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > article h3 {
+  font-size: 2rem;
+  margin: 20px;
+}
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > article > p:last-of-type {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
