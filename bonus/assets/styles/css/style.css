@@ -52,17 +52,108 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #687385;
+}
+
+html {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
 body {
   background-color: #f1f2f3;
 }
 body > header {
   height: 10vh;
   display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.3fr;
   background-color: white;
 }
-body > header > section ul > li {
+body > header > nav {
+  justify-self: center;
+  align-self: center;
+}
+body > header > nav > ul li {
+  color: #687385;
   display: inline;
+  margin: 0 20px;
+}
+body > header > ul {
+  justify-self: center;
+  align-self: center;
+}
+body > header > ul li {
+  color: #687385;
+  display: inline;
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+body > header > ul li:nth-of-type(1) a {
+  color: #3b5998;
+}
+body > header > ul li:nth-of-type(2) a {
+  color: #00acee;
+}
+body > header > ul li:nth-of-type(3) a {
+  color: #E60023;
+}
+
+body > main > section:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) {
+  justify-self: center;
+  align-self: center;
+  padding: 8vw;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) h1 strong {
+  color: steelblue;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:first-of-type {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) p:last-of-type {
+  font-size: 1.4rem;
+  color: #687385;
+  margin: 20px 0;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) form {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) form input {
+  border-radius: 40px 0 0 40px;
+  height: 50px;
+  border: none;
+  padding: 0 30px;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(1) form button {
+  background-color: steelblue;
+  border-radius: 0 40px 40px 0;
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 0 20px;
+  margin-left: -5px;
+  font-weight: bold;
+}
+body > main > section:nth-of-type(1) > section:nth-of-type(2) {
+  justify-self: center;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
