@@ -1,14 +1,45 @@
 @media(min-width: 768px){
     body{
-       background: $gradient-top-left;
+        > main > section{
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            > section{
+                width: 25vw;
+                &:nth-of-type(2){
+                    border: 1px solid #64dfdf;
+                }
+            }
+        }
+    }
+    html {  
+        font-size: 16px;  
     }
 }
 
 
-
-
-@media(max-width: 768px){
+@media(max-width: 767.98px){
     body{
-        background-color: red;
+        > header{
+            display: none;
+        }
+        > main > section{
+            > section{
+                margin: 40px;
+                width: 80%;
+                &:nth-of-type(2){
+                    border: none;
+                }
+            }
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+    html {  
+        font-size: 26px;  
+    }
+
 }
+
+

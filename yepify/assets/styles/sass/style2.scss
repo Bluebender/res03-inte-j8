@@ -3,7 +3,6 @@
 @import "media2.scss";
 
 html {  
-  font-size: 16px;  
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -17,6 +16,8 @@ a{
 body{
     min-height: 100vh;
     width: 100vw;
+    background: $gradient-top-left;
+
     
     &> header{
         border-bottom: 1px solid $neonBlue;
@@ -51,12 +52,11 @@ body > main{
 
 body > main > section{
     display: flex;
-    flex-rirection : row;
-    justify-content: center;
-    align-items: end;
     > section{
         background-color: white;
-        
+        display: grid;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+
         > header{
             background-color: #64dfdf;
             height: 5vh;
@@ -78,20 +78,18 @@ body > main > section{
         > footer{
             display: flex;
             justify-content: center;
-            margin: 100px;
+            align-items: center;
+            color: blue;
         }
         &:nth-of-type(1){
             height: 55vh;
-            width: 25vw;
         }
         &:nth-of-type(2){
             height: 60vh;
-            width: 25vw;
-            border: 1px solid #64dfdf;
         }
         &:nth-of-type(3){
             height: 55vh;
-            width: 25vw;
         }
     }
 }
+
