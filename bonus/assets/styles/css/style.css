@@ -234,6 +234,8 @@ body > main > section:nth-of-type(2) > section:nth-of-type(3) {
 body > main > section:nth-of-type(2) > section:nth-of-type(3) > article {
   border-radius: 20px;
   box-shadow: 2px 2px 10px grey;
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 0.6fr 0.2fr;
 }
 body > main > section:nth-of-type(2) > section:nth-of-type(3) > article > figure > img {
   width: 100%;
