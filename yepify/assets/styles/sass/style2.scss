@@ -1,0 +1,97 @@
+@import "reset.scss";
+@import "vars.scss";
+@import "media2.scss";
+
+html {  
+  font-size: 16px;  
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a{
+    text-decoration : none;
+    color: black;
+}
+
+// HEADER
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    
+    &> header{
+        border-bottom: 1px solid $neonBlue;
+        &> nav > ul{
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            &> li a{
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}    
+
+// MAIN TITRE PRINCIPALE
+
+body > main{
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 50px;
+        }
+}
+
+// MAIN Tableau
+
+body > main > section{
+    display: flex;
+    flex-rirection : row;
+    justify-content: center;
+    align-items: end;
+    > section{
+        background-color: white;
+        
+        > header{
+            background-color: #64dfdf;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: white;
+                font-weight: bold;
+                
+            }
+        }
+        > section{
+            p{
+                margin-bottom: 15px;
+            }
+            padding: 10px;
+        }
+        > footer{
+            display: flex;
+            justify-content: center;
+            margin: 100px;
+        }
+        &:nth-of-type(1){
+            height: 55vh;
+            width: 25vw;
+        }
+        &:nth-of-type(2){
+            height: 60vh;
+            width: 25vw;
+            border: 1px solid #64dfdf;
+        }
+        &:nth-of-type(3){
+            height: 55vh;
+            width: 25vw;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  }
+  body > main {
+    flex-direction: row;
+  }
+  body > main > section {
+    width: 50%;
+  }
+  body > main > section:nth-of-type(2) > section {
+    width: 17vw;
+  }
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  }
+  body > header {
+    display: none;
+  }
+  body > main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body > main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body > main > section:nth-of-type(1) {
+    margin-top: 5vh;
+  }
+  body > main > section:nth-of-type(1) > p {
+    text-align: center;
+  }
+  body > main > section:nth-of-type(2) > section {
+    width: 60vw;
+  }
+  html {
+    font-size: 36px;
+  }
+}
+html {
+  font-family: "JetBrains Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+body > header {
+  border-bottom: 1px solid #64dfdf;
+}
+body > header > nav > ul {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+body > header > nav > ul > li a {
+  color: white;
+  font-weight: bold;
+}
+body > main {
+  display: flex;
+}
+body > main > section:nth-of-type(1) {
+  padding: 15% 10%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+}
+body > main > section:nth-of-type(1) > h1 {
+  font-size: 3rem;
+}
+body > main > section:nth-of-type(1) > p {
+  font-size: 1.5rem;
+}
+body > main > section:nth-of-type(2) {
+  padding: 8%;
+}
+body > main > section:nth-of-type(2) > section {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+body > main > section:nth-of-type(2) > section > header {
+  border-bottom: 1px solid #64dfdf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+body > main > section:nth-of-type(2) > section > header > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body > main > section:nth-of-type(2) > section > header > section h2 {
+  color: #7400b8;
+}
+body > main > section:nth-of-type(2) > section > header > section p {
+  color: #64dfdf;
+  font-weight: bold;
+}
+body > main > section:nth-of-type(2) > section > header img {
+  height: 50px;
+}
+body > main > section:nth-of-type(2) > section > section {
+  padding: 10px;
+}
+body > main > section:nth-of-type(2) > section > section > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  font-size: 0.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+body > main > section:nth-of-type(2) > section > section > ul > li:first-of-type {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+body > main > section:nth-of-type(2) > section > section > ul > li > img {
+  height: 20px;
+  margin-right: 10px;
+}
+body > main > section:nth-of-type(2) > section > section > ul > li:last-of-type {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=style.css.map */
