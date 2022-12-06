@@ -1,0 +1,17 @@
+@import "reset.scss";
+@import "vars.scss";
+
+body{
+    background-color: #f1f2f3;
+    > header{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 0.4fr;
+        background-color: white;
+        > section {
+            ul > li{
+                display: inline;
+            }
+        }
+    }
+}
